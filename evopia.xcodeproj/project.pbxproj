@@ -7,14 +7,31 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		090222C321229808003AB24B /* leftMenuViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 090222C221229808003AB24B /* leftMenuViewController.swift */; };
+		090222C6212299E1003AB24B /* tradmarkTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 090222C4212299E1003AB24B /* tradmarkTableViewCell.swift */; };
+		090222C7212299E1003AB24B /* tradmarkTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 090222C5212299E1003AB24B /* tradmarkTableViewCell.xib */; };
+		090222CB21229F9B003AB24B /* leftTableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 090222CA21229F9B003AB24B /* leftTableView.swift */; };
+		090222CF2122A456003AB24B /* simpleTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 090222CD2122A456003AB24B /* simpleTableViewCell.swift */; };
+		090222D02122A456003AB24B /* simpleTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 090222CE2122A456003AB24B /* simpleTableViewCell.xib */; };
+		090222D42122A9CA003AB24B /* subCellTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 090222D22122A9CA003AB24B /* subCellTableViewCell.swift */; };
+		090222D52122A9CA003AB24B /* subCellTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 090222D32122A9CA003AB24B /* subCellTableViewCell.xib */; };
 		09405AA6212287870095169A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09405AA5212287870095169A /* AppDelegate.swift */; };
 		09405AA8212287870095169A /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09405AA7212287870095169A /* ViewController.swift */; };
 		09405AAB212287870095169A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 09405AA9212287870095169A /* Main.storyboard */; };
 		09405AAD212287950095169A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 09405AAC212287950095169A /* Assets.xcassets */; };
 		09405AB0212287950095169A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 09405AAE212287950095169A /* LaunchScreen.storyboard */; };
+		1B85E504E7172213261EA8E2 /* Pods_evopia.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C3888602B0122B6695CD6EFE /* Pods_evopia.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		090222C221229808003AB24B /* leftMenuViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = leftMenuViewController.swift; sourceTree = "<group>"; };
+		090222C4212299E1003AB24B /* tradmarkTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = tradmarkTableViewCell.swift; sourceTree = "<group>"; };
+		090222C5212299E1003AB24B /* tradmarkTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = tradmarkTableViewCell.xib; sourceTree = "<group>"; };
+		090222CA21229F9B003AB24B /* leftTableView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = leftTableView.swift; sourceTree = "<group>"; };
+		090222CD2122A456003AB24B /* simpleTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = simpleTableViewCell.swift; sourceTree = "<group>"; };
+		090222CE2122A456003AB24B /* simpleTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = simpleTableViewCell.xib; sourceTree = "<group>"; };
+		090222D22122A9CA003AB24B /* subCellTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = subCellTableViewCell.swift; sourceTree = "<group>"; };
+		090222D32122A9CA003AB24B /* subCellTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = subCellTableViewCell.xib; sourceTree = "<group>"; };
 		09405AA2212287870095169A /* evopia.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = evopia.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		09405AA5212287870095169A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		09405AA7212287870095169A /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -22,6 +39,9 @@
 		09405AAC212287950095169A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		09405AAF212287950095169A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		09405AB1212287950095169A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C3888602B0122B6695CD6EFE /* Pods_evopia.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_evopia.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		E3CDF6937D78F2AA7769A0B5 /* Pods-evopia.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-evopia.debug.xcconfig"; path = "Pods/Target Support Files/Pods-evopia/Pods-evopia.debug.xcconfig"; sourceTree = "<group>"; };
+		EB2675EDA8C29C6A030084A4 /* Pods-evopia.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-evopia.release.xcconfig"; path = "Pods/Target Support Files/Pods-evopia/Pods-evopia.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -29,17 +49,67 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1B85E504E7172213261EA8E2 /* Pods_evopia.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		090222C121229808003AB24B /* LeftMenu */ = {
+			isa = PBXGroup;
+			children = (
+				090222D12122A9BB003AB24B /* subCell */,
+				090222CC2122A434003AB24B /* simpleCell */,
+				090222C921229F71003AB24B /* TableView */,
+				090222C8212299EC003AB24B /* TradMark */,
+				090222C221229808003AB24B /* leftMenuViewController.swift */,
+			);
+			path = LeftMenu;
+			sourceTree = "<group>";
+		};
+		090222C8212299EC003AB24B /* TradMark */ = {
+			isa = PBXGroup;
+			children = (
+				090222C4212299E1003AB24B /* tradmarkTableViewCell.swift */,
+				090222C5212299E1003AB24B /* tradmarkTableViewCell.xib */,
+			);
+			path = TradMark;
+			sourceTree = "<group>";
+		};
+		090222C921229F71003AB24B /* TableView */ = {
+			isa = PBXGroup;
+			children = (
+				090222CA21229F9B003AB24B /* leftTableView.swift */,
+			);
+			path = TableView;
+			sourceTree = "<group>";
+		};
+		090222CC2122A434003AB24B /* simpleCell */ = {
+			isa = PBXGroup;
+			children = (
+				090222CD2122A456003AB24B /* simpleTableViewCell.swift */,
+				090222CE2122A456003AB24B /* simpleTableViewCell.xib */,
+			);
+			path = simpleCell;
+			sourceTree = "<group>";
+		};
+		090222D12122A9BB003AB24B /* subCell */ = {
+			isa = PBXGroup;
+			children = (
+				090222D22122A9CA003AB24B /* subCellTableViewCell.swift */,
+				090222D32122A9CA003AB24B /* subCellTableViewCell.xib */,
+			);
+			path = subCell;
+			sourceTree = "<group>";
+		};
 		09405A99212287870095169A = {
 			isa = PBXGroup;
 			children = (
 				09405AA4212287870095169A /* evopia */,
 				09405AA3212287870095169A /* Products */,
+				48B8EC44FF0F40FD18CBF380 /* Pods */,
+				86FEE5CC033BD8216E81AEF3 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -54,6 +124,7 @@
 		09405AA4212287870095169A /* evopia */ = {
 			isa = PBXGroup;
 			children = (
+				090222C121229808003AB24B /* LeftMenu */,
 				09405AA5212287870095169A /* AppDelegate.swift */,
 				09405AA7212287870095169A /* ViewController.swift */,
 				09405AA9212287870095169A /* Main.storyboard */,
@@ -64,6 +135,23 @@
 			path = evopia;
 			sourceTree = "<group>";
 		};
+		48B8EC44FF0F40FD18CBF380 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				E3CDF6937D78F2AA7769A0B5 /* Pods-evopia.debug.xcconfig */,
+				EB2675EDA8C29C6A030084A4 /* Pods-evopia.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		86FEE5CC033BD8216E81AEF3 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				C3888602B0122B6695CD6EFE /* Pods_evopia.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -71,9 +159,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 09405AB4212287950095169A /* Build configuration list for PBXNativeTarget "evopia" */;
 			buildPhases = (
+				F5A9A24C6C2D2A3C1FB280C9 /* [CP] Check Pods Manifest.lock */,
 				09405A9E212287870095169A /* Sources */,
 				09405A9F212287870095169A /* Frameworks */,
 				09405AA0212287870095169A /* Resources */,
+				D891AC6AF0F217B7E269F9CB /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -125,18 +215,65 @@
 				09405AB0212287950095169A /* LaunchScreen.storyboard in Resources */,
 				09405AAD212287950095169A /* Assets.xcassets in Resources */,
 				09405AAB212287870095169A /* Main.storyboard in Resources */,
+				090222C7212299E1003AB24B /* tradmarkTableViewCell.xib in Resources */,
+				090222D52122A9CA003AB24B /* subCellTableViewCell.xib in Resources */,
+				090222D02122A456003AB24B /* simpleTableViewCell.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		D891AC6AF0F217B7E269F9CB /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-evopia/Pods-evopia-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/SJSwiftSideMenuController/SJSwiftSideMenuController.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SJSwiftSideMenuController.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-evopia/Pods-evopia-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		F5A9A24C6C2D2A3C1FB280C9 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-evopia-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		09405A9E212287870095169A /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				090222C321229808003AB24B /* leftMenuViewController.swift in Sources */,
+				090222CB21229F9B003AB24B /* leftTableView.swift in Sources */,
+				090222D42122A9CA003AB24B /* subCellTableViewCell.swift in Sources */,
 				09405AA8212287870095169A /* ViewController.swift in Sources */,
 				09405AA6212287870095169A /* AppDelegate.swift in Sources */,
+				090222C6212299E1003AB24B /* tradmarkTableViewCell.swift in Sources */,
+				090222CF2122A456003AB24B /* simpleTableViewCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -278,6 +415,7 @@
 		};
 		09405AB5212287950095169A /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = E3CDF6937D78F2AA7769A0B5 /* Pods-evopia.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -295,6 +433,7 @@
 		};
 		09405AB6212287950095169A /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = EB2675EDA8C29C6A030084A4 /* Pods-evopia.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;

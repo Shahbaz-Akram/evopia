@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14113" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" restorationIdentifier="tradmarkTableViewCell" selectionStyle="default" indentationWidth="10" rowHeight="216" id="KGk-i7-Jjw" customClass="tradmarkTableViewCell" customModule="evopia" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="216"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="215.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="blue-shape" translatesAutoresizingMaskIntoConstraints="NO" id="T68-ap-3vb">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="215.5"/>
+                    </imageView>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="logo" translatesAutoresizingMaskIntoConstraints="NO" id="cyj-25-c14">
+                        <rect key="frame" x="110" y="9" width="100" height="100"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="100" id="21v-xN-5tL"/>
+                            <constraint firstAttribute="height" constant="100" id="IPw-00-4Xc"/>
+                        </constraints>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Evopia" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qbA-ot-zBZ">
+                        <rect key="frame" x="121" y="119" width="78" height="33"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="27"/>
+                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Provider" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="m5v-wX-Smh">
+                        <rect key="frame" x="133" y="157" width="54" height="17"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="yDf-Ua-xP1">
+                        <rect key="frame" x="259" y="177" width="40" height="40"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="40" id="3gk-Hm-dfO"/>
+                            <constraint firstAttribute="width" constant="40" id="d3D-T3-qdn"/>
+                        </constraints>
+                        <state key="normal" image="green-power-button"/>
+                    </button>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="T68-ap-3vb" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" id="010-cR-w7r"/>
+                    <constraint firstItem="qbA-ot-zBZ" firstAttribute="top" secondItem="cyj-25-c14" secondAttribute="bottom" constant="10" id="5ae-OO-cv8"/>
+                    <constraint firstItem="cyj-25-c14" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="9" id="8dT-JZ-6z6"/>
+                    <constraint firstAttribute="bottom" secondItem="yDf-Ua-xP1" secondAttribute="bottom" constant="-1.5" id="9xM-ch-ptD"/>
+                    <constraint firstItem="m5v-wX-Smh" firstAttribute="centerX" secondItem="H2p-sc-9uM" secondAttribute="centerX" id="I4r-38-hFZ"/>
+                    <constraint firstItem="cyj-25-c14" firstAttribute="centerX" secondItem="H2p-sc-9uM" secondAttribute="centerX" id="Idh-7U-1aQ"/>
+                    <constraint firstAttribute="trailing" secondItem="yDf-Ua-xP1" secondAttribute="trailing" constant="21" id="RQo-bO-QNR"/>
+                    <constraint firstItem="T68-ap-3vb" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" id="YcI-E4-jrv"/>
+                    <constraint firstAttribute="bottom" secondItem="T68-ap-3vb" secondAttribute="bottom" id="e8s-V8-MWF"/>
+                    <constraint firstAttribute="trailing" secondItem="T68-ap-3vb" secondAttribute="trailing" id="r6R-DZ-jJf"/>
+                    <constraint firstItem="m5v-wX-Smh" firstAttribute="top" secondItem="qbA-ot-zBZ" secondAttribute="bottom" constant="5" id="rji-5u-ULu"/>
+                    <constraint firstItem="qbA-ot-zBZ" firstAttribute="centerX" secondItem="cyj-25-c14" secondAttribute="centerX" id="txb-R6-3Vr"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <connections>
+                <outlet property="imgView" destination="cyj-25-c14" id="gM4-8x-Xp6"/>
+            </connections>
+            <point key="canvasLocation" x="25" y="138"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="blue-shape" width="929" height="682"/>
+        <image name="green-power-button" width="196" height="196"/>
+        <image name="logo" width="185" height="159"/>
+    </resources>
+</document>
