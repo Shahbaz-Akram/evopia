@@ -1,0 +1,16 @@
+PODS:
+  - SJSwiftSideMenuController (1.2)
+
+DEPENDENCIES:
+  - SJSwiftSideMenuController
+
+SPEC REPOS:
+  https://github.com/cocoapods/specs.git:
+    - SJSwiftSideMenuController
+
+SPEC CHECKSUMS:
+  SJSwiftSideMenuController: c28974db07aa6a9ae102df006832f5b8ca2c70e6
+
+PODFILE CHECKSUM: d4f0ece385ef65d5f8d60379ab6ef061603f396c
+
+COCOAPODS: 1.5.3
