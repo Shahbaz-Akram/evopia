@@ -9,25 +9,21 @@
 import UIKit
 import SJSwiftSideMenuController
 
+
 class ViewController: UIViewController {
 
+    @IBOutlet weak var collectionView: ItemCollectionView!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view, typically from a nib.
-        if let image : UIImage = UIImage(named: "more") as UIImage? {
-            SJSwiftSideMenuController .showLeftMenuNavigationBarButton(image: image)
-        }
         //To enable Swipe gesture for toggle menu
+        self.navigationController?.isNavigationBarHidden = true
         SJSwiftSideMenuController.enableDimbackground = true
     }
 
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
-    }
-    // left menu toggle
-    @IBAction func toggleLeftSideMenutapped(_ sender: AnyObject) {
-        SJSwiftSideMenuController.toggleLeftSideMenu()
     }
 }
 
