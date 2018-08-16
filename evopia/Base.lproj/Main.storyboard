@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14113" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="2V9-8Q-f1E">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14113" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="YTU-jy-8g5">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
@@ -398,7 +398,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="853.60000000000002" y="25.187406296851577"/>
+            <point key="canvasLocation" x="841" y="130"/>
         </scene>
         <!--Left Menu View Controller-->
         <scene sceneID="w1r-1Z-d0v">
@@ -449,15 +449,101 @@
             </objects>
             <point key="canvasLocation" x="181.59999999999999" y="25.637181409295355"/>
         </scene>
+        <!--Request View Controller-->
+        <scene sceneID="xGD-Dc-X1Q">
+            <objects>
+                <viewController storyboardIdentifier="RequestViewController" id="rQp-fJ-b9l" customClass="RequestViewController" customModule="evopia" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="ZSO-By-IYg">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <searchBar contentMode="redraw" translatesAutoresizingMaskIntoConstraints="NO" id="I3f-y1-e97">
+                                <rect key="frame" x="0.0" y="64" width="375" height="56"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </searchBar>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="iQR-sT-jNQ">
+                                <rect key="frame" x="0.0" y="120" width="375" height="38"/>
+                                <subviews>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="tap-icon" translatesAutoresizingMaskIntoConstraints="NO" id="ebF-rD-DrB">
+                                        <rect key="frame" x="8" y="9" width="20" height="20"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="20" id="VDW-ai-Exo"/>
+                                            <constraint firstAttribute="height" constant="20" id="zQU-Hb-kgx"/>
+                                        </constraints>
+                                    </imageView>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Tap on the thread to place a bid" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dXu-60-Zm0">
+                                        <rect key="frame" x="38" y="10" width="204.5" height="17"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstItem="dXu-60-Zm0" firstAttribute="leading" secondItem="ebF-rD-DrB" secondAttribute="trailing" constant="10" id="9Yf-MA-ICd"/>
+                                    <constraint firstItem="ebF-rD-DrB" firstAttribute="leading" secondItem="iQR-sT-jNQ" secondAttribute="leading" constant="8" id="Gci-Wv-bpA"/>
+                                    <constraint firstAttribute="height" constant="38" id="cjr-aa-h9t"/>
+                                    <constraint firstItem="ebF-rD-DrB" firstAttribute="centerY" secondItem="iQR-sT-jNQ" secondAttribute="centerY" id="fwW-IS-Pkc"/>
+                                    <constraint firstItem="dXu-60-Zm0" firstAttribute="centerY" secondItem="ebF-rD-DrB" secondAttribute="centerY" id="p9C-c8-DeI"/>
+                                </constraints>
+                            </view>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" restorationIdentifier="RequestTableView" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="none" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="1Qw-iq-0v3" customClass="RequestTableView" customModule="evopia" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="158" width="375" height="509"/>
+                                <color key="backgroundColor" red="0.93725490199999995" green="0.93725490199999995" blue="0.95686274510000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            </tableView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="1Qw-iq-0v3" firstAttribute="top" secondItem="iQR-sT-jNQ" secondAttribute="bottom" id="C0P-w1-Jke"/>
+                            <constraint firstItem="iQR-sT-jNQ" firstAttribute="top" secondItem="I3f-y1-e97" secondAttribute="bottom" id="Flq-e7-KB1"/>
+                            <constraint firstItem="1Qw-iq-0v3" firstAttribute="trailing" secondItem="sxM-7B-xx0" secondAttribute="trailing" id="Sov-Kz-GU5"/>
+                            <constraint firstItem="iQR-sT-jNQ" firstAttribute="trailing" secondItem="sxM-7B-xx0" secondAttribute="trailing" id="YYZ-hG-efa"/>
+                            <constraint firstItem="iQR-sT-jNQ" firstAttribute="leading" secondItem="sxM-7B-xx0" secondAttribute="leading" id="fLt-d8-BlT"/>
+                            <constraint firstItem="1Qw-iq-0v3" firstAttribute="leading" secondItem="sxM-7B-xx0" secondAttribute="leading" id="hvv-dH-x5t"/>
+                            <constraint firstItem="I3f-y1-e97" firstAttribute="top" secondItem="sxM-7B-xx0" secondAttribute="top" id="kuM-ld-ogH"/>
+                            <constraint firstAttribute="bottom" secondItem="1Qw-iq-0v3" secondAttribute="bottom" id="mv9-8W-2B6"/>
+                            <constraint firstItem="I3f-y1-e97" firstAttribute="trailing" secondItem="sxM-7B-xx0" secondAttribute="trailing" id="nV8-sO-0yb"/>
+                            <constraint firstItem="I3f-y1-e97" firstAttribute="leading" secondItem="sxM-7B-xx0" secondAttribute="leading" id="qqO-hd-3vV"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="sxM-7B-xx0"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="Y7A-po-7GG"/>
+                    <connections>
+                        <outlet property="tableView" destination="1Qw-iq-0v3" id="bJd-fo-lho"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="EcJ-QI-pur" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3076" y="25.637181409295355"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="HhX-2X-zKX">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="YTU-jy-8g5" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="xd8-OE-JlL">
+                        <rect key="frame" x="0.0" y="20" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="rQp-fJ-b9l" kind="relationship" relationship="rootViewController" id="12e-oS-vpM"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="RVT-KI-Z3g" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2136.8000000000002" y="25.637181409295355"/>
+        </scene>
     </scenes>
     <resources>
         <image name="account-man" width="40" height="59"/>
         <image name="confrences" width="90" height="74"/>
-        <image name="filter" width="53" height="58"/>
+        <image name="filter" width="170" height="170"/>
         <image name="meetings" width="114" height="73"/>
         <image name="menu" width="48" height="40"/>
         <image name="notification-bell" width="56" height="59"/>
         <image name="parties" width="82" height="84"/>
+        <image name="tap-icon" width="63" height="53"/>
         <image name="wedding" width="74" height="79"/>
     </resources>
 </document>

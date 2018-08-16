@@ -24,6 +24,8 @@ class leftTableView: UITableView {
     fileprivate var cellItems = [cellData]()
     fileprivate var subCellItems = [subCellData]()
     
+    var pushToRequestVC:(()->())!
+    
     override func awakeFromNib() {
         registerNib()
         populateData()
@@ -109,6 +111,10 @@ extension leftTableView :UITableViewDataSource{
         return 80
     }
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        if indexPath.section == 3{
+            pushToRequestVC()
+        }
+        
         if indexPath.section == 6{
             if cellItems[indexPath.section - 1].isExpand == true{
                 cellItems[indexPath.section - 1].isExpand =  false
